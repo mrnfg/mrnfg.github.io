@@ -1,0 +1,75 @@
+section#hero {
+  background-image: url(/img/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 4rem);
+  display: grid;
+}
+
+.hero-content {
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr auto 25%;
+  align-self: center;
+  padding: 2rem;
+}
+
+.title {
+  grid-column: 2 / -1;
+  margin: 0 0 1rem 0;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  grid-row: 2;
+  grid-column: 2 / -1;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.detail {
+  grid-row: 2;
+  grid-column: 1 / 2;
+  align-self: center;
+  justify-self: center;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--p50);
+}
+
+.reading-time {
+  color: var(--s500);
+  position: relative;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-right: 1rem;
+}
+
+.reading-time::before {
+  content: "";
+  position: absolute;
+  top: -0.3rem;
+  left: -0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 25px;
+  border: 1px solid var(--s500);
+}
+
+@media (max-width: 760px) {
+.hero-content {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.title {
+  margin: 0;
+  font-size: 3.5rem;
+}
+}

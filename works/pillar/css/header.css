@@ -1,0 +1,141 @@
+.header {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr auto 25%;
+  grid-template-areas: "logo nav lang cta";
+  padding: 2rem;
+  height: 4rem;
+}
+
+.logo {
+  align-self: center;
+  justify-self: center;
+  padding: 0.5rem;
+}
+
+.nav {
+  align-self: center;
+}
+
+.nav ul .dropdown {
+  display: none;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.nav a:hover {
+  color: var(--p300);
+}
+
+.btn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  border-radius: 8px;
+  background-color: var(--p500);
+  border: none;
+  outline: none;
+}
+
+.cta a {
+  color: var(--grey-b-50);
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--p300);
+}
+
+.lang {
+  padding: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo nav";
+  }
+
+  .lang {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    /* justify-self: center;
+    grid-column: 2 / -1; */
+  }
+
+  /* .cta {
+    display: none; 
+     grid-row: 1;
+    grid-column: 2 / 3; 
+  }  */
+
+  .nav ul li:last-child {
+    margin-right: 2rem;
+    /* background-color: black; */
+  }
+
+  .nav ul li:not(:first-child) {
+    display: none;
+  }
+
+  .nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav ul li a {
+    display: flex;
+  }
+
+  .nav ul li ul.dropdown li {
+    display: block;
+  }
+
+  .nav ul li ul.dropdown {
+    /* width: fit-content; */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    position: absolute;
+    display: none;
+  }
+
+  .nav ul li a:hover {
+    color: var(--p600);
+    background-color: var(--p300);
+    border-radius: 8px;
+  }
+
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  /* .nav {
+    display: none;
+  } */
+}
+
+@media (max-width: 640px) {
+  /* .header {
+    padding: 1rem 1rem;
+  } */
+}

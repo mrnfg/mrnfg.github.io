@@ -1,0 +1,34 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+dt,
+dl,
+dd,
+blockquote {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  /* border-radius: 5px; */
+}

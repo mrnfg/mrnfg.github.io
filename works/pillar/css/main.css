@@ -1,0 +1,177 @@
+.content {
+  color: var(--h-text);
+  padding: 4rem 4rem 8rem 4rem;
+  max-width: 65ch;
+}
+
+.content a {
+  color: var(--p500);
+  text-decoration: underline;
+}
+
+.content-intro h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.content-intro p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+article h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  margin-top: 4rem;
+}
+
+article h3 {
+  font-size: 1.5625rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+article p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+article ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-left: 2rem;
+}
+
+article li {
+  list-style: inside;
+}
+
+/* Quotes */
+
+.quote-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 10px;
+  background: var(--s200, #e8fffb);
+  color: var(--heading-text, #010101);
+  font-size: 1.5625rem;
+  font-style: italic;
+  line-height: 2rem;
+}
+
+.tip {
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  font-size: 1.125rem;
+  /* text-align: center; */
+}
+
+.quote-2 {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--p500, #374bff);
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.5rem;
+  position: relative;
+  margin-left: 4rem;
+  padding: 4rem 0;
+}
+
+.quote-2::before {
+  content: " ";
+  position: absolute;
+  top: 6rem;
+  left: -4rem;
+  width: 3rem;
+  border: 2px solid var(--p300, #afb7ff);
+}
+
+/* Cards */
+
+.big {
+  font-size: 4.5rem;
+  line-height: 4rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* Table */
+
+.table-container {
+  overflow-x: scroll;
+  margin-top: 2rem;
+}
+
+.table {
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+table th:not(:last-child),
+table td:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+table>thead>tr:not(:last-child)>th,
+table>thead>tr:not(:last-child)>td,
+table>tbody>tr:not(:last-child)>th,
+table>tbody>tr:not(:last-child)>td,
+table>tfoot>tr:not(:last-child)>th,
+table>tfoot>tr:not(:last-child)>td,
+table>tr:not(:last-child)>td,
+table>tr:not(:last-child)>th,
+table>thead:not(:last-child),
+table>tbody:not(:last-child),
+table>tfoot:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+table thead tr th {
+  border-bottom: 1px solid black;
+}
+
+td,
+th {
+  padding: 1rem;
+}
+
+th {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+td {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.table-container::-webkit-scrollbar {
+  height: 0.31894rem;
+
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #374bff;
+  border-radius: 5px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 5px;
+}

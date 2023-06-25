@@ -1,0 +1,78 @@
+ @media (max-width: 1200px) {
+     .table {
+         white-space: normal;
+     }
+ }
+
+ @media (max-width: 640px) {
+
+     /* Header */
+
+
+     /* Main */
+
+     .content {
+         padding: 0rem 2rem 4rem 2rem;
+     }
+
+     .quote-2 {
+         margin-left: 1rem;
+     }
+
+     .quote-2::before {
+         width: 1rem;
+         left: -2rem;
+     }
+
+     .table {
+         white-space: nowrap;
+     }
+
+
+     /* Cards */
+
+     .card-container {
+         grid-template-columns: 1fr;
+         gap: 2rem;
+     }
+
+     .card-2 {
+         display: grid;
+         grid-template-columns: 1fr;
+     }
+
+     .card-2 img {
+         border-radius: 1.5rem 1.5rem 0 0;
+     }
+
+
+     /* Footer */
+
+     .site-logo {
+         text-align: center;
+     }
+
+     .newsletter {
+         justify-content: center;
+         gap: 1rem;
+     }
+
+     .site-newsletter h4 {
+         text-align: center;
+     }
+
+     .footer-copy {
+         justify-content: center;
+         gap: 2rem;
+     }
+
+     .site-cta button {
+         align-self: center;
+     }
+
+     .footer-nav {
+         justify-content: space-between;
+         gap: 2rem;
+     }
+
+ }

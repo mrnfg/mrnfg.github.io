@@ -1,0 +1,16 @@
+.progress-bar-bg {
+  position: sticky;
+  bottom: 0;
+  height: 1rem;
+  width: 100%;
+  background-color: var(--p200);
+}
+
+#progress-bar {
+  position: sticky;
+  bottom: 0;
+  --progress: 0;
+  height: 1rem;
+  width: var(--progress);
+  background-color: var(--p500);
+}
