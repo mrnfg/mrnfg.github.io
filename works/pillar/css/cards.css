@@ -73,10 +73,8 @@
 }
 
 .card-2-content a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 2px solid var(--layout-b-line);
+  text-decoration: none;
+
   padding: 1rem 1rem 1rem 2rem;
 }
 
@@ -100,7 +98,13 @@
 }
 
 .card-link-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none !important;
   color: var(--p600) !important;
   font-weight: 700;
+  padding-right: 1.5rem;
+  border-top: 2px solid var(--layout-b-line);
 }

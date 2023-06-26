@@ -27,69 +27,91 @@
 .grey-b-50 {
   color: var(--grey-b-50);
 }
+
 .grey-b-100 {
   color: var(--grey-b-100);
 }
+
 .grey-b-200 {
   color: var(--grey-b-200);
 }
+
 .grey-b-600 {
   color: var(--grey-b-600);
 }
+
 .grey-b-700 {
   color: var(--grey-b-700);
 }
+
 .grey-b-900 {
   color: var(--grey-b-900);
 }
+
 .grey-50 {
   color: var(--grey-50);
 }
+
 .grey-100 {
   color: var(--grey-100);
 }
+
 .grey-200 {
   color: var(--grey-200);
 }
+
 .grey-300 {
   color: var(--grey-300);
 }
+
 .layout-b-line {
   color: var(--layout-b-line);
 }
+
 .p50 {
   color: var(--p50);
 }
+
 .p100 {
   color: var(--p100);
 }
+
 .p500 {
   color: var(--p500);
 }
+
 .p300 {
   color: var(--p300);
 }
+
 .p200 {
   color: var(--p200);
 }
+
 .p600 {
   color: var(--p600);
 }
+
 .p800 {
   color: var(--p800);
 }
+
 .s200 {
   color: var(--s200);
 }
+
 .s500 {
   color: var(--s500);
 }
+
 .s700 {
   color: var(--s700);
 }
+
 .b-text {
   color: var(--b-text);
 }
+
 .h-text {
   color: var(--h-text);
 }

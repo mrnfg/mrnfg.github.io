@@ -17,9 +17,9 @@
     />
     <link rel="icon" type="image/x-icon" href="./img/fav.svg" sizes="32x32" />
     <link rel="stylesheet" href="/works/pillar/css/style.css" />
-    <!-- <script>
+    <script>
         var password;
-        var pass1="DelmonteOdyssey";
+        var pass1="Odyssey";
         password=prompt('Please enter your password to view this page!',' ');
         if (password==pass1)
         allert ('Password Correct! Click OK to enter!');
@@ -27,66 +27,59 @@
         {
           window.location="https://www.google.com/";
         }
-    </script> -->
+    </script>
+
+    <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
-    
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
     <section id="hero">
-      <header class="header">
+      <header>
         <a href="#" class="logo"
           ><img src="./img/logo.svg" alt="Poseidon Logo"
         /></a>
-        <nav class="nav">
-          <ul>
-            <li><a href="#">Landing</a>
-            <ul class="dropdown">
-              <li><a href="#">Theme</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Email</a></li>
-            </ul>
-             </li>
+        <nav class="navbar">
+          <ul class="links">
+            <li><a href="#">Landing</a></li>
             <li><a href="#">Theme</a></li>
             <li><a href="#">Pages</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Email</a></li>
           </ul>
-        </nav>
-        <div class="lang"><a href=""><img
-          src="./img/switcher-lang.svg"
-          alt="Language Switcher"
-        /></a></div>
-          <button class="btn cta"><a href="#">Custom Call to Action</a></button>
-        <!-- <div class="toggle-btn">
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+          <div class="toggle-btn open">
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
           </div>
+        </nav>
+        <div class="lang">
+          <a class="lang" href="#"
+            ><img src="./img/switcher-lang.svg" alt="lang"
+          /></a>
         </div>
-      </div>
-      <div class="dropdown-menu">
-        <li><a href="#">Landing</a></li>
-        <li><a href="#">Thames</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Email</a></li>
-        <li>
-          <button><a href="#">Call to Action</a></button>
-        </li>
-      </div> -->
+        <button class="btn cta"><a href="#">Custom Call to Action</a></button>
+        <div class="dropdown-menu">
+          <li><a href="#">Landing</a></li>
+          <li><a href="#">Theme</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Email</a></li>
+
+          <li>
+            <button class="btn cta"><a href="#">Call to Action</a></button>
+          </li>
+        </div>
       </header>
       <div class="hero-content">
-        <h1 class="title">Delmonte Odyssey</h1>
+        <h1 class="title">Pillar Page Title</h1>
         <p class="sub-title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatum, voluptate, quibusdam, quia voluptas quod quos
-          exercitationem quas voluptatibus quidem doloribus. Quisquam
-          voluptatum, voluptate, quibusdam, quia voluptas quod quos
-          exercitationem quas voluptatibus quidem doloribus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <p class="detail"><span class="reading-time">34 </span>minutes reading</p>
         </div>
@@ -289,7 +282,7 @@
           <div class="card-link" >
           <a href="#">Leggi l’articolo</a>
           <div>
-          <img src="./img/icon-arrow-right.svg" alt="right-arrow"></div>
+          <img class="arrow" src="./img/icon-arrow-right.svg" alt="right-arrow"></div>
         </div>
         </div>
         <div class="card">
@@ -302,7 +295,7 @@
           <div class="card-link" >
             <a href="#">Leggi l’articolo</a>
             <div>
-            <img src="./img/icon-arrow-right.svg" alt="right-arrow"></div>
+            <img class="arrow" src="./img/icon-arrow-right.svg" alt="right-arrow"></div>
           </div>
         </div>
       </div>
@@ -319,20 +312,28 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   viverra nisl ac ex euismod, sit amet porta quam consectetur.</p>
                 </div>
-              <a class="card-link-2" href="#">Discover More <span>🡢</span></a>
+                <div class="card-link-2">
+              <a href="#">Discover More</a>
+              <div>
+                <img class="arrow" src="./img/icon-arrow-right.svg" alt="right-arrow"></div>
+              </div>
+            </div>
+        </div>
+        <div class="card-2">
+          <img class="card-2-img" src="./img/iStock-817023732.png" alt="IMG" />
+          <div class="card-2-content">
+            <div class="card-2-desc">
+              <h4>Sed viverra nisl ac ex euismod</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                viverra nisl ac ex euismod, sit amet porta quam consectetur.</p>
+              </div>
+              <div class="card-link-2">
+            <a href="#">Discover More</a>
+            <div>
+              <img class="arrow" src="./img/icon-arrow-right.svg" alt="right-arrow"></div>
             </div>
           </div>
-          <div class="card-2">
-            <img class="card-2-img" src="./img/iStock-817023732.png" alt="IMG" />
-            <div class="card-2-content">
-              <div class="card-2-desc">
-            <h4>Sed viverra nisl ac ex euismod</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              viverra nisl ac ex euismod, sit amet porta quam consectetur.</p>
-            </div>
-            <a class="card-link-2" href="#">Discover More <span>🡢</span></a>
-            </div>
-          </div>
+      </div>
         </div>
        </article>
     
@@ -432,7 +433,7 @@
       <div id="progress-bar"></div>
     </div>
 
-    <script src="/js/simple-anime.js"></script>
+    <script src="./js/simple-anime.js"></script>
     <script src="script.js"></script>
 
   </body>
